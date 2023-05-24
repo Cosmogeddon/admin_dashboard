@@ -44,6 +44,9 @@ svg {
     grid-column: 2 / 4;
     grid-row: 2 / 4;
     background-color: rgba(226,232,240,255);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 20px;
 }
 
 input {
@@ -94,4 +97,33 @@ button {
     border-radius: 20px;
     border: none;
     font-weight: 600;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    width: 90%;
+    box-shadow: 10px 5px 5px lightgrey;
+    border-radius: 7px;
+    border-left: 10px solid orange;
+    padding: 20px;
+}
+
+.sidecard {
+    background-color: white;
+}
+
+.project_header {
+    grid-column: 1 / 3;
+}
+
+.card_icons {
+    display: flex;
+    justify-content: right;
 }
